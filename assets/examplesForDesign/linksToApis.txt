@@ -1,0 +1,3 @@
+https://rapidapi.com/symanto-symanto-default/api/big-five-personality-insights/
+
+https://www.petfinder.com/developers/v2/docs/

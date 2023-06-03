@@ -1,0 +1,547 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: black; /* Set the initial background color to black */
+  transition: background-color 0.5s ease; /* Add smooth transition effect */
+}
+
+.Welcome_Banner h1 {
+  font-size: 90px;
+  color: aqua;
+}
+
+.Welcome_Banner h5 {
+  font-size: 20px;
+  color: aqua;
+}
+
+/* Hero Banner Styles */
+.hero_container {
+  position: relative;
+  height: 200px; /* Adjust the height as needed */
+  background: #ccc; /* Placeholder background color */
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity as desired */
+  z-index: -1;
+}
+
+.hero_container h1 {
+  color: #fff; /* Placeholder text color */
+  margin-top: 80px; /* Adjust the margin-top as needed */
+}
+
+/* Question Container Styles */
+.question_container {
+  margin-top: 100vh; /* Adjust the margin-top to create space more than a screen apart */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moonPlaceholder {
+  background-image: url("./secondaryAssests/moon.png");
+  background-size: cover;
+  background-position: center;
+  height: 80rem;
+  
+}
+
+.catPlaceholder {
+  position: fixed;
+  display: none;
+  top: 10rem;
+  left: 10rem;
+  width: 10%; /* Set the width as desired */
+  height: 30vh; /* Set the height to cover the entire viewport */
+  background-image: url('/assets/secondaryAssests/cat.gif'); /* Replace with your image path or URL */
+  background-size: cover;
+  background-position: left top;
+  z-index: 500; /* Ensure the placeholder is behind the content */
+}
+
+.question6_container {
+  background-image: url("./secondaryAssests/land.png");
+  background-size: cover;
+  background-position: center;
+  height: 80rem;
+  
+}
+
+.question_container h1 {
+  margin-bottom: 30px;
+  color: aliceblue;
+  
+}
+
+.question_container h2 {
+  margin-bottom: 30px;
+  color: aliceblue;
+  position: relative;
+  top: 45rem;
+}
+
+.question_container input[type="text"] {
+  margin-bottom: 20px;
+  outline: none;
+  border: 2px solid #00FFFF; /* Neon blue outline color */
+  padding: 5px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+#submitButton {
+  background-color: #4CAF50; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove the button border */
+  padding: 10px 20px; /* Set the padding */
+  border-radius: 20px; /* Make the button rounded */
+  cursor: pointer; /* Add a cursor on hover */
+}
+
+
+body{
+margin: 0;
+padding: 0;
+background: #FF5C58;
+}
+
+.box{
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.box span{
+display: none;
+width: 20px;
+height: 20px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -10px;
+animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+animation-delay: -0.2s;
+}
+
+.box span:nth-child(3)
+{
+animation-delay: -0.4s;
+}
+
+@keyframes animate{
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+.scrollBox1{
+position: relative;
+  /* left: 10%; */
+  top: -1rem;
+transform: translate(-50%, -50%);
+  display: none;
+}
+
+.scrollBox1 span{
+display: block;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -5px;
+animation: animate 2s infinite;
+}
+
+.scrollBox1 span:nth-child(2)
+{
+animation-delay: -0.2s;
+}
+
+.scrollBox1 span:nth-child(3)
+{
+animation-delay: -0.4s;
+}
+
+@keyframes animate{
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+
+.scrollBox2{
+position: relative;
+  /* left: 10%; */
+  top: -1rem;
+transform: translate(-50%, -50%);
+  display: none;
+}
+
+.scrollBox2 span{
+  display: block;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -5px;
+animation: animate 2s infinite;
+}
+
+.scrollBox2 span:nth-child(2)
+{
+animation-delay: -0.2s;
+}
+
+.scrollBox2 span:nth-child(3)
+{
+animation-delay: -0.4s;
+}
+
+@keyframes animate{
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+
+.scrollBox3{
+position: relative;
+  /* left: 10%; */
+  top: -1rem;
+transform: translate(-50%, -50%);
+  display: none;
+}
+
+.scrollBox3 span{
+  display: block;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -5px;
+animation: animate 2s infinite;
+}
+
+.scrollBox3 span:nth-child(2)
+{
+animation-delay: -0.2s;
+}
+
+.scrollBox3 span:nth-child(3)
+{
+animation-delay: -0.4s;
+}
+
+@keyframes animate{
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+
+.scrollBox4{
+position: relative;
+  /* left: 10%; */
+  top: -1rem;
+transform: translate(-50%, -50%);
+  display: none;
+}
+
+.scrollBox4 span{
+display: block;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -5px;
+animation: animate 2s infinite;
+}
+
+.scrollBox4 span:nth-child(2)
+{
+animation-delay: -0.2s;
+}
+
+.scrollBox4 span:nth-child(3)
+{
+animation-delay: -0.4s;
+}
+
+@keyframes animate{
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+
+.scrollBox5{
+position: relative;
+  /* left: 10%; */
+  top: -1rem;
+transform: translate(-50%, -50%);
+  display: none;
+}
+
+.scrollBox5 span{
+display: block;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -5px;
+animation: animate 2s infinite;
+}
+
+.scrollBox5 span:nth-child(2)
+{
+animation-delay: -0.2s;
+}
+
+.scrollBox5 span:nth-child(3)
+{
+animation-delay: -0.4s;
+}
+
+@keyframes animate{
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+/* Circles Container */
+.full-panel{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  padding: 30px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px 0px rgb(77, 77, 77, 0.46);
+  max-width: 500px;
+  margin: 50px auto;
+}
+/* End of Circles Container */
+
+/* Circle Settings */
+.circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.outer-circle {
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 4px rgb(77, 77, 77, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.inner-circle {
+  width: 85px;
+  height: 85px;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 3px 2px #dddada inset;
+  z-index: 1;
+  overflow: hidden;
+}
+.inner-circle img {
+  width: 90px;
+  background-size: cover;
+}
+.sq {
+  position: absolute;
+  width: 50%;
+  height: 120%;
+  max-height: 0;
+  background: rgb(242 92 5);
+}
+.outer-circle:hover .sq {
+  max-height: 130%;
+}
+/* Circle-1 Animation Settings */
+.circle-1 .sq-1 {
+  top: -5%;
+  right: 0;
+  transition: max-height 0.4s linear 0.3s;
+}
+.circle-1:hover .sq-1 {
+  transition: max-height 0.4s linear 0s;
+}
+.circle-1 .sq-2 {
+  bottom: -5%;
+  left: 0;
+  transition: max-height 0.4s linear 0s;
+}
+.circle-1:hover .sq-2 {
+  transition: max-height 0.4s ease-out 0.3s;
+}
+/* End of Circle-1 Animation Settings */
+
+/* Circle-2 Animation Settings */
+.circle-2 .sq-1 {
+  bottom: -5%;
+  right: 0;
+  transition: max-height 0.4s ease-out 0s;
+}
+.circle-2:hover .sq-1 {
+  transition: max-height 0.4s linear 0.3s;
+}
+.circle-2 .sq-2 {
+  top: -5%;
+  left: 0;
+  transition: max-height 0.4s linear 0.3s;
+}
+.circle-2:hover .sq-2 {
+  transition: max-height 0.4s linear 0s;
+}
+/* End of Circle-2 Animation Settings */
+/* Circle-3 Animation Settings */
+.circle-3 .sq-1 {
+  top: -5%;
+  right: 0;
+  transition: max-height 0.4s linear;
+}
+.circle-3 .sq-2 {
+  bottom: -5%;
+  left: 0;
+  transition: max-height 0.4s linear;
+}
+/* End of Circle-3 Animation Settings */
+/* Circle-4 Animation Settings */
+.circle-4 .sq-1 {
+  bottom: -5%;
+  right: 0;
+  transition: max-height 0.4s ease-out;
+}
+.circle-4 .sq-2 {
+  top: -5%;
+  left: 0;
+  transition: max-height 0.4s linear;
+}
+/* End of Circle-4 Animation Settings */
+/* Circle-5 Animation Settings */
+.circle-5 .sq-1 {
+  top: -5%;
+  right: 0;
+  transition: max-height 0.4s ease-out;
+}
+.circle-5 .sq-2 {
+  top: -5%;
+  left: 0;
+  transition: max-height 0.4s linear;
+}
+/* End of Circle-5 Animation Settings */
+
+/* Circle-6 Animation Settings */
+.circle-6 .sq-1 {
+  bottom: -5%;
+  right: 0;
+  transition: max-height 0.4s ease-out;
+}
+.circle-6 .sq-2 {
+  bottom: -5%;
+  left: 0;
+  transition: max-height 0.4s linear;
+}
+
+/* Add this CSS rule at the end of your existing CSS */
+.circle.active .inner-circle {
+  border: 3px solid #ff0000; /* Change the border style to your desired effect */
+}
+
+/* End of Circle-6 Animation Settings */
+
+
+/* End of Circle Settings */
+
+

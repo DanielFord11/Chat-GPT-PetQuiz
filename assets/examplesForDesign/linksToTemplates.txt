@@ -1,0 +1,5 @@
+https://bootdey.com/snippets/view/Contacts-Grid-Cards
+
+https://jqueryui.com/dialog/#modal-form
+
+https://mdbootstrap.com/docs/standard/extended/bootstrap-survey-form/#modal

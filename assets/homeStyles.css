@@ -1,0 +1,286 @@
+.parent-container {
+    height: 200px; 
+}
+  
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+  
+.left-video,
+.right-video {
+    width: 30%;
+    height: 200px; 
+    border-radius: 20px;
+}
+  
+.left-video {
+    margin-right: 2%;
+}
+  
+@media (max-width: 200px) {
+    .left-video,
+    .right-video {
+      width: 30%;
+    }
+}
+  
+.petCard {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -170%);
+    width: 100px; 
+}
+  
+.petCard-Link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-right: 20%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 5vw;
+    text-decoration: none;
+    transition: transform 0.9s ease-in-out;
+    text-shadow:
+      -1px -1px 0 red,
+      1px -1px 0 red,
+      -1px 1px 0 red,
+      1px 1px 0 red;
+}
+  
+@media (max-width: 800px) {
+    .petCard-Link {
+      font-size: 2vw; 
+    }
+}
+  
+@media (max-width: 600px) {
+    .petCard-Link {
+      font-size: .06vw; 
+    }
+}
+  
+.petCard-Link:hover {
+    transform: scale(1.1);
+    color: #FFA000;
+}
+  
+.petCard-Link i {
+    transition: color 0.3s ease;
+  }
+  
+.petCard-Name {
+    font-size: 1rem;
+    text-align: left;
+}
+  
+#hero {
+    background-image: url(secondaryAssests/image/img-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: auto;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+  
+
+.personality-test-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 23vh;
+    background-color: #FFC107;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.personality-test-btn:hover {
+    background-color: #FFA000;
+    transform: scale(1.1); 
+}
+  
+.personality-test-btn i {
+    margin-right: 5px;
+}
+
+  
+.footer-wrapper {
+    background-color: #d892dc;
+      padding: 5px; 
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-right: 40px;
+}
+  
+.footer-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background-color: transparent;
+    color: rgb(48, 48, 174);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links i:hover {
+    transform: scale(1.5);
+    color: white;
+  }
+
+.footer-links a:hover {
+    color: white;
+}
+  
+.footer-links i {
+    font-size: 25px;
+    margin-right: 5px;
+    color: black;
+}
+  
+  
+.footer-disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.footer-disclaimer p {
+    margin: 0 5px; 
+    font-size: 12px; 
+    color: #777;
+}
+  
+.footer-disclaimer a {
+    text-decoration: none;
+    margin-right: 10px; 
+}
+  
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+  
+
+  
+.newsletter-form input{
+    padding: 8px 16px; 
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px; 
+    cursor: pointer;
+}
+  
+  
+.newsletter-form input[type="submit"]:hover {
+    background-color: #555;
+    color: white;
+}
+  .navbar {
+    background-color: royalblue;
+  }
+
+.navbar-nav .dropdown-menu {
+    text-align: center;
+}
+  
+.navbar-nav .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center; 
+    text-decoration: none;
+}
+  
+.navbar-nav .dropdown-menu .chewy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+}
+  
+.navbar-nav .dropdown-menu .chewy-link i {
+    margin-right: 0.5rem;
+    margin-bottom: 5px;
+}
+  
+.navbar-brand img {
+    height: 30px; 
+}
+  
+.navbar-nav .nav-link {
+    padding: 0.5rem 0.75rem; 
+    font-size: 14px; 
+}
+  
+.navbar-nav .dropdown-menu {
+    font-size: 14px; 
+}
+  
+.navbar-nav .dropdown-menu a {
+    padding: 0.25rem 1rem; 
+}
+  
+.navbar-icon {
+    width: 30px; 
+    height: 0vh; 
+}
+  
+.navbar-icon i {
+    font-size: 16px; 
+}
+  
+  
+  #zip {
+    background-color: white;
+    color: black; 
+  }
+  .white-icon {
+  color: white;
+}

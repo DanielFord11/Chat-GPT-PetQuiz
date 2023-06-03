@@ -1,0 +1,223 @@
+/*Search results page stylesheet*/
+
+body{
+    margin-top:5px;
+    background: white;
+}
+
+main {
+    background-color: rgb(219, 239, 245); 
+}
+  
+#pets {
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: scroll; 
+    scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory; 
+}
+
+.our-team {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+    width: 200px; 
+    height: 250px; 
+    border-radius: 7%;
+}
+      
+.our-team img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    position: relative;
+    right: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border: 2px solid red; /* Add the desired border color and width */
+
+}
+          
+.our-team:hover img{
+    right: 60%;
+}
+
+.our-team .team-content {
+    width: 80%;
+    height: 100%;
+    background: red; 
+    padding: 20% 30px 0;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: -80%;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+.our-team:hover .team-content{
+    right: 0;
+}
+    
+.our-team .title {
+    font-size: 22px;
+    color: white;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.our-team .post {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.our-team .description{
+    font-size: 14px;
+color: #191b26;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+    
+.our-team .social li{
+   display: inline-block;
+   margin-right: 10px;
+}
+
+.our-team .social li:last-child{
+    margin-right: 0;
+}
+
+.our-team .social li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    border: 1px solid #eee;
+}
+
+.our-team .social li a:hover{ color: #fff; }
+.our-team .social li a.fa-facebook{ background: #3b5a9b;border: 1px solid #3b5a9b; }
+.our-team .social li a.fa-twitter{ background: #2baae1;border: 1px solid #2baae1; }
+.our-team .social li a.fa-youtube{ background: #c3181e;border: 1px solid #c3181e; }
+
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 50px; }
+}
+
+@media only screen and (max-width: 360px){
+    .team-content{ padding: 15% 15px 0; }
+    .our-team .social li{ margin-right: 0; }
+}
+
+a{
+    text-decoration:none;    
+}
+    
+.section-title {
+    margin-bottom: 60px;
+}
+
+.text-center {
+    text-align: center!important;
+}
+    
+.section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    text-transform: capitalize;
+}
+
+#pets{
+    border: 2px solid black;
+    margin: 20px;
+}
+
+
+.navbar {
+    background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    height: 130px
+}
+
+.custom-nav li.nav-item a.nav-link {
+    color: white;
+}
+
+.search-icon {
+  color: black;
+}
+
+.custom-button {
+    background-color: white;
+}
+
+@keyframes colorChangeAnimation {
+    0% {
+      filter: invert(1); /* Initial color: white */
+    }
+    14% {
+      filter: invert(0.4); /* Green */
+    }
+    28% {
+      filter: invert(0.8); /* Yellow */
+    }
+    42% {
+      filter: invert(0.2); /* Blue */
+    }
+    57% {
+      filter: invert(0.6); /* Pink */
+    }
+    71% {
+      filter: invert(0.3); /* Purple */
+    }
+    85% {
+      filter: invert(0.7); /* Orange */
+    }
+    100% {
+      filter: invert(1); /* Final color: white */
+    }
+  }
+  
+  .navbar-brand img {
+    animation: colorChangeAnimation 8s infinite; 
+  }
+  
+  .navbar-nav .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center; 
+    text-decoration: none;
+}
+  
+.navbar-nav .dropdown-menu .chewy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+}
+  
+.navbar-nav .dropdown-menu .chewy-link i {
+    margin-right: 0.5rem;
+    margin-bottom: 5px;
+}
