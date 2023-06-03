@@ -65,7 +65,7 @@ body {
   left: 10rem;
   width: 10%; /* Set the width as desired */
   height: 30vh; /* Set the height to cover the entire viewport */
-  background-image: url('/assets/secondaryAssests/cat.gif'); /* Replace with your image path or URL */
+  background-image: url('./assets/secondaryAssests/cat.gif'); /* Replace with your image path or URL */
   background-size: cover;
   background-position: left top;
   z-index: 500; /* Ensure the placeholder is behind the content */
