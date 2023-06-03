@@ -22,7 +22,13 @@ var responseEl = document.getElementById("response");
 var submitEl = document.getElementById("submitButton");
 
 
-const apiKey = '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';
+const encryptedKey = process.env.API_KEY; // Access the encrypted API key from the GitHub Secret
+console.log(encryptedKey)
+
+const apiKey = CryptoJS.AES.decrypt(encryptedKey, 'PetsRule11').toString(CryptoJS.enc.Utf8);
+console.log(apiKey)
+
+
 const modelId = 'gpt-3.5-turbo'; // or any other available model ID
 
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
