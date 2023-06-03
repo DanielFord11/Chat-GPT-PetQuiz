@@ -21,10 +21,7 @@ var responseEl = document.getElementById("response");
 
 var submitEl = document.getElementById("submitButton");
 
-
-const encodedKey = atob(process.env.ENCODED_API_KEY); // Access the encoded API key from the GitHub Secret
-
-const apiKey = CryptoJS.AES.decrypt(encodedKey, 'PetsRule11').toString(CryptoJS.enc.Utf8);
+const apiKey = secrets.API_KEY;
 
 // Use the decrypted key in your code
 console.log(apiKey);
