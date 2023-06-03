@@ -22,11 +22,12 @@ var responseEl = document.getElementById("response");
 var submitEl = document.getElementById("submitButton");
 
 
-const encryptedKey = process.env.API_KEY; // Access the encrypted API key from the GitHub Secret
-console.log(encryptedKey)
+const encodedKey = atob(process.env.ENCODED_API_KEY); // Access the encoded API key from the GitHub Secret
 
-const apiKey = CryptoJS.AES.decrypt(encryptedKey, 'PetsRule11').toString(CryptoJS.enc.Utf8);
-console.log(apiKey)
+const apiKey = CryptoJS.AES.decrypt(encodedKey, 'PetsRule11').toString(CryptoJS.enc.Utf8);
+
+// Use the decrypted key in your code
+console.log(apiKey);
 
 
 const modelId = 'gpt-3.5-turbo'; // or any other available model ID
