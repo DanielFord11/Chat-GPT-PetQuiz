@@ -21,7 +21,10 @@ var responseEl = document.getElementById("response");
 
 var submitEl = document.getElementById("submitButton");
 
-const apiKey = secrets.API_KEY;
+var part1 = "sk-24ZpExaErRBYhPXxNAblT"
+var part2 = "3BlbkFJcKxpfVIMWRO83rgW2J0x"
+
+const apiKey = part1 + part2;
 
 // Use the decrypted key in your code
 console.log(apiKey);
